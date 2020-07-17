@@ -24,6 +24,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://use.typekit.net/yoy4anh.css%22%3E'}
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/bf6e07096b.js', crossorigin: "anonymous"}
     ]
   },
   /*
