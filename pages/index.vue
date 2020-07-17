@@ -1,73 +1,64 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        Discharge-audio
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <main class="main">
+    <section class="bumper">
+      <DischargeCircles />
+      <div class="bumper__text">
+        <DischargeLogo />
+        <!-- <h1 class="bumper__text__pseudonyme">Discharge</h1> -->
+        <h2 class="bumper__text__name">Simon Amiot</h2>
+        <p class="bumper__text__message">Website under construction</p>
       </div>
-    </div>
-  </div>
+    </section>
+    <section class="demoreel">
+      <h2>Demoreel Mid 2020</h2>
+      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/438985378?color=E6E6Ef&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </section>
+  </main>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+<style lang="scss">
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.bumper {
   display: flex;
   justify-content: center;
+  align-content: center;
   align-items: center;
-  text-align: center;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 10rem;
+  &__text {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+     &__pseudonyme {
+    font-family: $font-display;
+    font-size: ms(7);
+    }
+    &__name {
+      @extend h2;
+      text-transform: uppercase;
+    }
+    &__message {
+      font-weight: 300;
+      font-style: italic;
+      font-size: ms(2);
+      color: $color-2-darker;
+    }
+  }
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.demoreel {
+  display: flex;
+  flex-flow: column;
+  width: 60rem;
+  padding: 4rem 0;
 }
 </style>

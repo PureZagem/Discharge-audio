@@ -22,7 +22,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://use.typekit.net/yoy4anh.css%22%3E'}
     ]
   },
   /*
@@ -46,7 +47,8 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/style-resources'
   ],
   /*
   ** Nuxt.js modules
@@ -58,6 +60,9 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content'
   ],
+  styleResources: {
+    scss: ['./assets/styles/variables/*.scss']
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

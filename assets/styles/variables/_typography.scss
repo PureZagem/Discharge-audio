@@ -1,0 +1,18 @@
+@import '../vendor/modularscale/_modularscale.scss';
+@import '../vendor/fontawesome/scss/fontawesome.scss';
+@import '../vendor/fontawesome/scss/solid.scss';
+@import '../vendor/fontawesome/scss/brands.scss';
+
+$modularscale: (
+  base: 1em,
+  ratio: 1.35
+);
+
+$font-display: "purista-web", monospace;
+$font-text: "lato", sans-serif;
+
+h2 {
+  font-weight: 300;
+  font-size: ms(5);
+  margin-bottom: 2rem;
+}
