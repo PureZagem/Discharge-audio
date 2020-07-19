@@ -600,8 +600,9 @@
 <style lang="scss">
   .discharge-circles {
     position: absolute;
-    // left: -50%;
+    left: -50%;
     z-index: -9000;
+    height: 100;
     path {
       fill: $medium-grey;
     }

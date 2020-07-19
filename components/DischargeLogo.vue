@@ -30,7 +30,9 @@
 
 <style lang="scss">
   .discharge-logo {
+    align-self: flex-start;
     max-width: 60rem;
+    width: 100%;
     color: $color-2-darker;
     margin-bottom: 2rem;
     path {
