@@ -45,6 +45,7 @@
   align-items: center;
   height: 100vh;
   width: 100%;
+  padding: 2rem;
   margin-bottom: 10rem;
   &__text {
     display: flex;
@@ -67,7 +68,6 @@
     &__message {
       font-weight: 300;
       font-style: italic;
-      font-size: ms(2);
       text-align: center;
       color: $color-2-darker;
     }
@@ -75,7 +75,6 @@
   &__scroll-CTA {
     text-align: center;
     p {
-      font-size: ms(2);
       font-weight: 300;
       font-style: italic;
       margin-bottom: 2rem;

@@ -37,18 +37,24 @@ export default {
 .links_socialmedia {
   display: flex;
   flex-flow: row wrap;
+  @media screen and (max-width: 960px) {
+   flex-flow: column nowrap;
+  }
   padding: 2rem;
 }
 
 .link_block {
   display: inline-flex;
   align-items: center;
-  font-size: ms(2);
+  @media screen and (max-width: 640px) {
+    font-size: ms(1);
+  }
   font-weight: 300;
   padding: 1rem 2rem;
 }
 
 i.fab {
   margin: 0 1rem;
+  font-size: ms(2);
 }
 </style>

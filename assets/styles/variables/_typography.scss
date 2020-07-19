@@ -12,4 +12,14 @@ h2 {
   font-weight: 300;
   font-size: ms(5);
   margin-bottom: 2rem;
+  @media screen and (max-width: 640px) {
+    font-size: ms(3);
+  }
+}
+
+p, span {
+  font-size: ms(2);
+  @media screen and (max-width: 640px) {
+    font-size: ms(1);
+  }
 }
