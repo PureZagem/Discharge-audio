@@ -26,7 +26,8 @@ export default {
       { rel: 'stylesheet', href: 'https://use.typekit.net/yoy4anh.css%22%3E'}
     ],
     script: [
-      { src: 'https://kit.fontawesome.com/bf6e07096b.js', crossorigin: "anonymous"}
+      { src: 'https://kit.fontawesome.com/bf6e07096b.js', crossorigin: "anonymous"},
+      { src: 'https://player.vimeo.com/api/player.js'}
     ]
   },
   /*
@@ -64,7 +65,10 @@ export default {
     '@nuxt/content'
   ],
   styleResources: {
-    scss: ['./assets/styles/variables/*.scss']
+    scss: [
+      './assets/styles/variables/*.scss',
+      './assets/styles/components/*.scss'
+    ]
   },
   /*
   ** Axios module configuration

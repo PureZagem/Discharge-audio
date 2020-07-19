@@ -1,13 +1,25 @@
 .link {
+  color: $light-grey;
+  text-decoration: none;
+  padding: 2rem;
   &__branded {
     &--soundcloud {
-      color: $colour-brand-soundcloud;
+      @extend .link;
+      &:hover {
+        color: $colour-brand-soundcloud;
+      }
     }
     &--twitter {
-      color: $colour-brand-twitter;
+      @extend .link;
+      &:hover {
+        color: $colour-brand-twitter;
+      }
     }
     &--linkedin {
-      color: $colour-brand-linkedin;
+      @extend .link;
+      &:hover {
+        color: $colour-brand-linkedin;
+      }
     }
   }
 }

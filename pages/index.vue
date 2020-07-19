@@ -4,14 +4,24 @@
       <DischargeCircles />
       <div class="bumper__text">
         <DischargeLogo />
+        <!-- Clean this in future commit -->
         <!-- <h1 class="bumper__text__pseudonyme">Discharge</h1> -->
-        <h2 class="bumper__text__name">Simon Amiot</h2>
-        <p class="bumper__text__message">Website under construction</p>
+        <h2 class="bumper__text__name">
+          Simon Amiot
+        </h2>
+        <p class="bumper__text__message">
+          Website under construction
+        </p>
       </div>
     </section>
     <section class="demoreel">
-      <h2>Demoreel Mid 2020</h2>
-      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/438985378?color=E6E6Ef&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <!-- Clean this in future commit -->
+      <h2>
+        Demoreel Mid 2020
+      </h2>
+      <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/438985378?color=E6E6Ef&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen />
+      </div>
     </section>
     <SocialLinks />
   </main>
@@ -59,7 +69,12 @@ export default {}
 .demoreel {
   display: flex;
   flex-flow: column;
+  // Clean this in future commit
   width: 60rem;
   padding: 4rem 0;
+  // Clean this in future commit
+  h2 {
+    text-align: center;
+  }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class="links_socialmedia">
-    <a v-for="profile in profiles" :key="profile.label" :href="profile.href" target="_blank" :class="profile.linkCLass"><i :class="profile.icon" /><span class="link__label">{{ profile.label }}</span></a>
+    <a v-for="profile in profiles" :key="profile.label" :href="profile.href" target="_blank" :class="profile.linkClass"><i :class="profile.icon" /><span class="link__label">{{ profile.label }}</span></a>
   </section>
 </template>
 
@@ -11,19 +11,19 @@ export default {
       profiles: [
         {
           href: 'https://soundcloud.com/simonamiot',
-          linkClass: 'link__branded--soundcloud',
+          linkClass: 'link_block link__branded--soundcloud',
           icon: 'fab fa-soundcloud',
           label: 'Soundcloud'
         },
         {
           href: 'https://twitter.com/simon_amiot',
-          linkClass: 'link__branded--twitter',
+          linkClass: 'link_block link__branded--twitter',
           icon: 'fab fa-twitter',
           label: 'Twitter'
         },
         {
           href: 'https://www.linkedin.com/in/simon-amiot-894542119/',
-          linkClass: 'link__branded--linkedin',
+          linkClass: 'link_block link__branded--linkedin',
           icon: 'fab fa-linkedin',
           label: 'LinkedIn'
         }
@@ -32,3 +32,23 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.links_socialmedia {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2rem;
+}
+
+.link_block {
+  display: inline-flex;
+  align-items: center;
+  font-size: ms(2);
+  font-weight: 300;
+  padding: 1rem 2rem;
+}
+
+i.fab {
+  margin: 0 1rem;
+}
+</style>
